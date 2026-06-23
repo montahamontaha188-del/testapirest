@@ -7,8 +7,8 @@ namespace testapirest.Data
     {
         public AppDbContaxt(DbContextOptions<AppDbContaxt> options) : base(options)
         {
-            
         }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Items>Items { get; set; }
     }
 }

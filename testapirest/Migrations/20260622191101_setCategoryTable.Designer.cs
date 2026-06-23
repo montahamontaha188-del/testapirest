@@ -11,8 +11,8 @@ using testapirest.Data;
 namespace testapirest.Migrations
 {
     [DbContext(typeof(AppDbContaxt))]
-    [Migration("20260622100832_setCategorytable")]
-    partial class setCategorytable
+    [Migration("20260622191101_setCategoryTable")]
+    partial class setCategoryTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

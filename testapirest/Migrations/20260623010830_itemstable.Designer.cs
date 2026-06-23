@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using testapirest.Data;
 
@@ -10,9 +11,11 @@ using testapirest.Data;
 namespace testapirest.Migrations
 {
     [DbContext(typeof(AppDbContaxt))]
-    partial class AppDbContaxtModelSnapshot : ModelSnapshot
+    [Migration("20260623010830_itemstable")]
+    partial class itemstable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

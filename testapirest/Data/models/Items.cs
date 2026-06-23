@@ -3,17 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace testapirest.Data.models
 {
-    public class Category
+    public class Items
     {
         [Key]
-        
         public int Id { get; set; }
-
-        [MaxLength(50)]
+        [MaxLength(100)]
         public string Name { get; set; }
+        public double Price {  get; set; }
+        [ForeignKey(nameof(category))]
+        public int CategoryId { get; set; }
+        public Category category { get; set; }
 
-        public string? notes { get; set; }
-
-        public List<Items> Items { get; set; }
     }
 }

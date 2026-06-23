@@ -5,7 +5,7 @@
 namespace testapirest.Migrations
 {
     /// <inheritdoc />
-    public partial class setCategorytable : Migration
+    public partial class setCategoryTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
